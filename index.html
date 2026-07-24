@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nexo — Download Oficial do App</title>
+<meta name="description" content="Baixe o Nexo, o app de gestão de estoque, vendas e lucro para pequenos revendedores.">
+<meta name="theme-color" content="#2563EB">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%232563EB'/%3E%3Crect x='10' y='21' width='5' height='10' rx='2.5' fill='white'/%3E%3Crect x='17.5' y='15' width='5' height='16' rx='2.5' fill='white'/%3E%3Crect x='25' y='9' width='5' height='22' rx='2.5' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{--blue:#2563EB;--blue2:#2054CB;--ink:#14161F;--muted:#6B7280;--paper:#F2F3F6;--white:#fff;--line:#E7E9EF;--green:#17A863;--shadow:0 15px 45px rgba(20,22,31,.10);--radius:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}button{font:inherit}.container{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(242,243,246,.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px}.logo{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,#5B85FF,#2054CB);display:grid;place-items:center;color:#fff;font-weight:800}.navlinks{display:flex;gap:28px;color:var(--muted);font-size:14px;font-weight:600}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;font-weight:700;border:0;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;box-shadow:0 12px 30px rgba(37,99,235,.25)}.ghost{background:#fff;border:1px solid var(--line)}
+.hero{padding:90px 0;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}.eyebrow{color:var(--blue);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.hero h1{font-size:clamp(38px,6vw,64px);line-height:1.04;letter-spacing:-.04em;margin:16px 0}.hero h1 span{color:var(--blue)}.lead{font-size:18px;color:var(--muted);max-width:590px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.meta{font-size:13px;color:#8b92a0;margin-top:14px}.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.pill{background:#fff;border:1px solid var(--line);padding:8px 13px;border-radius:999px;font-size:13px;font-weight:600;color:var(--muted)}
+.mockup{width:min(300px,80vw);margin:auto;background:#0b0e15;padding:10px;border-radius:38px;box-shadow:0 30px 70px rgba(0,0,0,.2);transform:rotate(-4deg)}.screen{aspect-ratio:9/19;background:linear-gradient(160deg,#eef4ff,#fff);border-radius:29px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-weight:700}.screen img{width:100%;height:100%;object-fit:cover;display:block}.screen-placeholder{padding:25px}.screen small{display:block;margin-top:8px;font-weight:500}
+.strip{background:#eaf0ff;border-block:1px solid #dce6ff;padding:22px 0}.strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;text-align:center;color:var(--blue2);font-size:14px;font-weight:700}
+section{padding:80px 0}.alt{background:#f7f8fa}.section-head{max-width:650px;margin-bottom:38px}.section-head h2{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:12px 0}.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 5px 20px rgba(20,22,31,.04)}.icon{width:48px;height:48px;border-radius:14px;background:#eaf0ff;color:var(--blue);display:grid;place-items:center;font-size:22px;margin-bottom:18px}.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}
+.two{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}.feature-list{display:grid;gap:14px}.check{display:flex;gap:12px;align-items:flex-start}.check b{display:block}.check span{color:var(--muted);font-size:14px}.checkmark{color:var(--green);font-weight:900}
+.steps{background:var(--ink);color:#fff;border-radius:var(--radius);padding:32px}.step{display:flex;gap:15px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.1)}.step:last-child{border:0}.num{width:30px;height:30px;border-radius:50%;background:var(--blue);display:grid;place-items:center;font-weight:800;flex:none}.step p{margin:3px 0 0;color:rgba(255,255,255,.65);font-size:14px}
+.faq{max-width:800px}.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;margin-bottom:10px;overflow:hidden}.faq-q{width:100%;background:none;border:0;padding:19px 20px;text-align:left;font-weight:700;display:flex;justify-content:space-between;cursor:pointer}.faq-a{display:none;padding:0 20px 20px;color:var(--muted);font-size:14px}.faq-item.open .faq-a{display:block}
+.cta{background:linear-gradient(135deg,var(--blue),#6d5af0);color:#fff;border-radius:var(--radius);padding:60px 30px;text-align:center}.cta h2{font-size:clamp(28px,4vw,42px);margin:0}.cta p{color:rgba(255,255,255,.8);max-width:520px;margin:12px auto 25px}.white{background:#fff;color:var(--blue)}
+footer{background:var(--ink);color:rgba(255,255,255,.6);padding:50px 0 25px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;padding-bottom:35px;border-bottom:1px solid rgba(255,255,255,.1)}footer .brand{color:#fff}footer p{max-width:320px;font-size:14px}footer h4{color:#fff;margin:0 0 12px}footer a{display:block;margin:8px 0;font-size:14px}.copy{padding-top:20px;font-size:12px}
+.mobile{display:none}
+@media(max-width:850px){.hero-grid,.two{grid-template-columns:1fr;gap:40px}.hero{padding:60px 0}.grid{grid-template-columns:1fr 1fr}.strip-grid{grid-template-columns:1fr 1fr}.navlinks{display:none}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.container{width:min(100% - 28px,1120px)}section{padding:60px 0}.grid{grid-template-columns:1fr}.hero h1{font-size:42px}.mockup{width:240px}.mobile{display:flex;position:fixed;bottom:12px;left:12px;right:12px;z-index:20;background:rgba(20,22,31,.94);color:#fff;padding:9px 10px 9px 15px;border-radius:999px;align-items:center;justify-content:space-between;box-shadow:var(--shadow)}.mobile .btn{padding:11px 17px;font-size:13px}.mobile-name{font-weight:700}.mobile small{display:block;color:#aaa;font-size:10px}}
+</style>
+</head>
+
+<body>
+<header><div class="container nav">
+<a class="brand" href="#inicio"><span class="logo">N</span>Nexo</a>
+<nav class="navlinks"><a href="#recursos">Recursos</a><a href="#novidades">Novidades</a><a href="#seguranca">Segurança</a><a href="#sobre">Sobre</a></nav>
+<a class="btn primary" data-download href="#">Baixar APK</a>
+</div></header>
+
+<main id="inicio">
+<section class="hero"><div class="container hero-grid"><div>
+<span class="eyebrow">Download oficial do app</span>
+<h1>Seu estoque, suas vendas e seu <span>lucro</span> em um só lugar.</h1>
+<p class="lead">Nexo é o app de gestão para quem revende produtos: cadastre itens, acompanhe suas vendas e veja seus resultados de forma simples.</p>
+<div class="actions"><a class="btn primary" data-download href="#">Baixar APK</a><a class="btn ghost" href="#recursos">Conhecer o app</a></div>
+<div class="meta">v<span data-version>1.0.0</span> · Android 8.0+ · <span data-size>~15 MB</span></div>
+<div class="pills"><span class="pill">✓ Funciona offline</span><span class="pill">✓ Sem anúncios</span><span class="pill">✓ Dados no aparelho</span></div>
+</div>
+<div class="mockup"><div class="screen">
+<img data-image="dashboard" src="dashboard.png" alt="Dashboard do Nexo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+<div class="screen-placeholder" style="display:none">Prévia do Nexo<small>Coloque sua imagem em <b>dashboard.png</b>.</small></div>
+</div></div>
+</div></section>
+
+<div class="strip"><div class="container strip-grid"><div>✓ Funciona offline</div><div>✓ Sem anúncios</div><div>✓ 1 Assinatura e é sempre seu</div><div>✓ Dados no aparelho</div></div></div>
+
+<section class="alt" id="recursos"><div class="container"><div class="section-head"><span class="eyebrow">Recursos</span><h2>Tudo para organizar sua revenda</h2><p>Feito para quem compra, cadastra, vende e quer saber exatamente como está o negócio.</p></div><div class="grid">
+<div class="card"><div class="icon">▦</div><h3>Dashboard completo</h3><p>Visualize lucro, dinheiro investido, estoque e outros indicadores em uma única tela.</p></div>
+<div class="card"><div class="icon">＋</div><h3>Cadastro de produtos</h3><p>Adicione produtos com foto, categoria, valor de compra e valor de venda.</p></div>
+<div class="card"><div class="icon">◎</div><h3>Metas mensais</h3><p>Defina uma meta de lucro e acompanhe seu progresso.</p></div>
+<div class="card"><div class="icon">▤</div><h3>Histórico de vendas</h3><p>Consulte produtos vendidos e mantenha seu histórico organizado.</p></div>
+<div class="card"><div class="icon">↥</div><h3>Backup e restauração</h3><p>Faça cópias de segurança dos seus dados e restaure quando precisar.</p></div>
+<div class="card"><div class="icon">?</div><h3>Suporte direto</h3><p>Entre em contato com o desenvolvedor quando precisar de ajuda.</p></div>
+</div></div></section>
+
+<section><div class="container two">
+<div class="mockup"><div class="screen">
+<img data-image="vendas" src="vendas.png" alt="Tela de vendas do Nexo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+<div class="screen-placeholder" style="display:none">Prévia da tela de vendas<small>Coloque sua imagem em <b>vendas.png</b>.</small></div>
+</div></div>
+<div><span class="eyebrow">Por dentro do app</span><h2>Cada venda registrada, sem esforço</h2><p class="lead">Organize seus produtos e acompanhe o que já foi vendido de forma rápida e intuitiva.</p><div class="feature-list">
+<div class="check"><b class="checkmark">✓</b><div><b>Histórico organizado</b><span>Consulte suas vendas sempre que precisar.</span></div></div>
+<div class="check"><b class="checkmark">✓</b><div><b>Produtos por categoria</b><span>Encontre seus itens com mais facilidade.</span></div></div>
+<div class="check"><b class="checkmark">✓</b><div><b>Dados locais</b><span>Seus dados permanecem no seu aparelho.</span></div></div>
+</div></div></div></section>
+
+<section class="alt" id="novidades"><div class="container"><div class="section-head"><span class="eyebrow">Changelog</span><h2>Novidades desta versão</h2><p>Confira o que há na versão atual do Nexo.</p></div><div class="card"><h3>Versão <span data-version>1.0.0</span></h3><p>• Lançamento oficial do Nexo<br>• Dashboard de gestão<br>• Cadastro de produtos<br>• Histórico de vendas<br>• Sistema de backup e restauração</p></div></div></section>
+
+<section id="seguranca"><div class="container"><div class="section-head"><span class="eyebrow">Segurança</span><h2>Download simples e transparente</h2><p>O Nexo é distribuído fora da Play Store. Veja como instalar.</p></div><div class="two"><div><div class="feature-list">
+<div class="check"><b class="checkmark">✓</b><div><b>Distribuição oficial</b><span>O botão de download leva diretamente ao APK configurado por você.</span></div></div>
+<div class="check"><b class="checkmark">✓</b><div><b>Sem anúncios</b><span>O app não depende de publicidade para funcionar.</span></div></div>
+<div class="check"><b class="checkmark">✓</b><div><b>Seus dados no aparelho</b><span>O armazenamento local mantém seus dados sob seu controle.</span></div></div>
+</div></div>
+<div class="steps"><h3>Como instalar</h3>
+<div class="step"><span class="num">1</span><div><b>Baixe o APK</b><p>Toque em qualquer botão de download desta página.</p></div></div>
+<div class="step"><span class="num">2</span><div><b>Permita a instalação</b><p>Se o Android pedir autorização para instalar de uma fonte externa, permita para o navegador ou gerenciador de arquivos usado.</p></div></div>
+<div class="step"><span class="num">3</span><div><b>Instale o Nexo</b><p>Abra o arquivo APK baixado e toque em instalar.</p></div></div>
+</div></div></div></section>
+
+<section class="alt" id="sobre"><div class="container two"><div><span class="eyebrow">Sobre</span><h2>O app por trás do Nexo</h2><p class="lead">O Nexo nasceu para ajudar pequenos revendedores a organizar estoque, vendas e resultados sem depender de planilhas complicadas.</p></div><div class="faq">
+<div class="faq-item"><button class="faq-q">O app é gratuito? <span>＋</span></button><div class="faq-a">Não. Cobramos R$ 30 pelo acesso vitalício.</div></div>
+<div class="faq-item"><button class="faq-q">Preciso de internet? <span>＋</span></button><div class="faq-a">O funcionamento principal pode ser offline. Recursos que dependam de serviços externos podem exigir internet.</div></div>
+<div class="faq-item"><button class="faq-q">Onde ficam meus dados? <span>＋</span></button><div class="faq-a">Os dados são armazenados localmente no aparelho, conforme a implementação do aplicativo.</div></div>
+<div class="faq-item"><button class="faq-q">Por que não está na Play Store? <span>＋</span></button><div class="faq-a">O Nexo é um projeto independente e, por enquanto, é distribuído diretamente pelo desenvolvedor.</div></div>
+</div></div></section>
+
+<section><div class="container"><div class="cta"><h2>Pronto para organizar sua revenda?</h2><p>Baixe o Nexo e comece a acompanhar seus produtos, vendas e resultados.</p><a class="btn white" data-download href="#">Baixar APK agora</a><div class="meta" style="color:rgba(255,255,255,.75)">v<span data-version>1.0.0</span> · Atualizado em <span data-date>22/07/2026</span></div></div></div></section>
+</main>
+
+<footer id="footer"><div class="container footer-grid"><div><a class="brand" href="#inicio"><span class="logo">N</span>Nexo</a><p>Gestão de estoque, vendas e lucro para pequenos revendedores.</p></div><div><h4>Produto</h4><a href="#recursos">Recursos</a><a href="#novidades">Novidades</a><a data-download href="#">Baixar APK</a></div><div><h4>Ajuda</h4><a href="#seguranca">Segurança</a><a href="#sobre">Perguntas frequentes</a><a data-releases target="_blank" rel="noopener">Todas as versões</a></div></div><div class="container copy">© <span id="year"></span> Nexo. Todos os direitos reservados.</div></footer>
+
+<div class="mobile"><div><div class="mobile-name">Nexo</div><small>v<span data-version>1.0.0</span> · <span data-size>~15 MB</span></small></div><a class="btn primary" data-download href="#">Baixar</a></div>
+
+<script>
+/* ============================================================
+   CONFIGURAÇÃO FÁCIL — EDITE SOMENTE AQUI
+   ============================================================
+
+   1. LINK DO APK:
+   Cole o link direto para o APK em directApkUrl.
+
+   Exemplo:
+   directApkUrl: 'https://seusite.com/Nexo.apk'
+
+   2. IMAGENS:
+   Coloque na mesma pasta do index.html:
+   - dashboard.png
+   - vendas.png
+
+   Se quiser trocar o nome dos arquivos, altere abaixo.
+*/
+const CONFIG = {
+  directApkUrl: 'COLE_AQUI_O_LINK_DIRETO_DO_APK',
+  dashboardImage: 'dashboard.png',
+  vendasImage: 'vendas.png',
+
+  version: '1.0.0',
+  date: '22/07/2026',
+  size: '~15 MB'
+};
+
+/* Não precisa editar abaixo desta linha */
+document.querySelectorAll('[data-version]').forEach(el => el.textContent = CONFIG.version);
+document.querySelectorAll('[data-date]').forEach(el => el.textContent = CONFIG.date);
+document.querySelectorAll('[data-size]').forEach(el => el.textContent = CONFIG.size);
+
+const dashboard = document.querySelector('[data-image="dashboard"]');
+const vendas = document.querySelector('[data-image="vendas"]');
+
+if (dashboard) dashboard.src = CONFIG.dashboardImage;
+if (vendas) vendas.src = CONFIG.vendasImage;
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => btn.parentElement.classList.toggle('open'));
+});
+
+document.querySelectorAll('[data-download]').forEach(a => {
+  a.href = CONFIG.directApkUrl;
+
+  a.addEventListener('click', e => {
+    if (!CONFIG.directApkUrl || CONFIG.directApkUrl === 'COLE_AQUI_O_LINK_DIRETO_DO_APK') {
+      e.preventDefault();
+      alert('O link do APK ainda não foi configurado. Abra o index.html e coloque o link em CONFIG > directApkUrl.');
+    }
+  });
+});
+
+document.querySelectorAll('[data-releases]').forEach(a => {
+  a.href = CONFIG.directApkUrl || '#';
+});
+</script>
+</body>
+</html>
