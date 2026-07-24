@@ -107,59 +107,144 @@ footer{background:var(--ink);color:rgba(255,255,255,.6);padding:50px 0 25px}.foo
    CONFIGURAÇÃO FÁCIL — EDITE SOMENTE AQUI
    ============================================================
 
-   1. LINK DO APK:
-   Cole o link direto para o APK em directApkUrl.
+   APK:
+   Coloque o arquivo APK na mesma pasta do index.html
+   e informe SOMENTE o nome do arquivo abaixo.
 
    Exemplo:
-   directApkUrl: 'https://seusite.com/Nexo.apk'
+   apkFileName: 'Nexo_1.0.1.apk'
 
-   2. IMAGENS:
-   Coloque na mesma pasta do index.html:
-   - dashboard.png
-   - vendas.png
+   Estrutura no Vercel:
 
-   Se quiser trocar o nome dos arquivos, altere abaixo.
+   index.html
+   Nexo_1.0.1.apk
+   dashboard.png
+   vendas.png
+
+   Para atualizar o APK no futuro:
+
+   1. Apague o APK antigo do projeto.
+   2. Coloque o novo APK.
+   3. Altere somente apkFileName abaixo.
+
+   Exemplo:
+   apkFileName: 'Nexo_1.0.2.apk'
+
+   Todos os botões de download serão atualizados automaticamente.
 */
+
 const CONFIG = {
-  directApkUrl: 'https://github.com/Nesxy987/Nexo/raw/refs/heads/main/Nexo_1.0.1.apk',
+
+  // =========================
+  // APK
+  // =========================
+  apkFileName: 'Nexo_1.0.1.apk',
+
+  // =========================
+  // IMAGENS DO APP
+  // =========================
   dashboardImage: 'dashboard.png',
   vendasImage: 'vendas.png',
 
+  // =========================
+  // INFORMAÇÕES DA VERSÃO
+  // =========================
   version: '1.0.1',
   date: '24/07/2026',
   size: '~5 MB'
 };
 
-/* Não precisa editar abaixo desta linha */
-document.querySelectorAll('[data-version]').forEach(el => el.textContent = CONFIG.version);
-document.querySelectorAll('[data-date]').forEach(el => el.textContent = CONFIG.date);
-document.querySelectorAll('[data-size]').forEach(el => el.textContent = CONFIG.size);
 
+/* ============================================================
+   NÃO EDITE ABAIXO DESTA LINHA
+   ============================================================ */
+
+// Cria automaticamente o caminho do APK.
+// O APK deve estar na mesma pasta do index.html.
+const apkUrl = './' + CONFIG.apkFileName;
+
+
+// Atualiza versão em todos os lugares da página
+document.querySelectorAll('[data-version]').forEach(el => {
+  el.textContent = CONFIG.version;
+});
+
+
+// Atualiza data em todos os lugares da página
+document.querySelectorAll('[data-date]').forEach(el => {
+  el.textContent = CONFIG.date;
+});
+
+
+// Atualiza tamanho do APK em todos os lugares da página
+document.querySelectorAll('[data-size]').forEach(el => {
+  el.textContent = CONFIG.size;
+});
+
+
+// Configura imagem do dashboard
 const dashboard = document.querySelector('[data-image="dashboard"]');
+
+if (dashboard) {
+  dashboard.src = CONFIG.dashboardImage;
+}
+
+
+// Configura imagem da tela de vendas
 const vendas = document.querySelector('[data-image="vendas"]');
 
-if (dashboard) dashboard.src = CONFIG.dashboardImage;
-if (vendas) vendas.src = CONFIG.vendasImage;
+if (vendas) {
+  vendas.src = CONFIG.vendasImage;
+}
 
+
+// Atualiza o ano automaticamente
 document.getElementById('year').textContent = new Date().getFullYear();
 
+
+// ============================================================
+// FAQ
+// ============================================================
+
 document.querySelectorAll('.faq-q').forEach(btn => {
-  btn.addEventListener('click', () => btn.parentElement.classList.toggle('open'));
-});
 
-document.querySelectorAll('[data-download]').forEach(a => {
-  a.href = CONFIG.directApkUrl;
+  btn.addEventListener('click', () => {
 
-  a.addEventListener('click', e => {
-    if (!CONFIG.directApkUrl || CONFIG.directApkUrl === 'COLE_AQUI_O_LINK_DIRETO_DO_APK') {
-      e.preventDefault();
-      alert('O link do APK ainda não foi configurado. Abra o index.html e coloque o link em CONFIG > directApkUrl.');
-    }
+    btn.parentElement.classList.toggle('open');
+
   });
+
 });
 
-document.querySelectorAll('[data-releases]').forEach(a => {
-  a.href = CONFIG.directApkUrl || '#';
+
+// ============================================================
+// DOWNLOAD DO APK
+// ============================================================
+
+// Encontra TODOS os botões que possuem data-download
+// e coloca o mesmo link do APK em todos eles.
+
+document.querySelectorAll('[data-download]').forEach(button => {
+
+  button.href = apkUrl;
+
+  // Faz o navegador tentar baixar o arquivo
+  button.setAttribute('download', CONFIG.apkFileName);
+
+});
+
+
+// ============================================================
+// LINK "TODAS AS VERSÕES"
+// ============================================================
+
+// Como agora o APK fica hospedado junto com o site,
+// o link aponta diretamente para o APK atual.
+
+document.querySelectorAll('[data-releases]').forEach(link => {
+
+  link.href = apkUrl;
+
 });
 </script>
 </body>
